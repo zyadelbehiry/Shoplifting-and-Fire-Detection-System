@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/templates/live-fire.css" />
+    <title>Live Fire Detection App</title>
+  </head>
+  <body>
+    <div class="stream-title">
+      <h1>Live Fire Detection</h1>
+    </div>
+    <div>
+      <div>
+        <video id="webcamFeed" autoplay></video>
+        <canvas id="canvas" style="display: none"></canvas>
+      </div>
+      <p class="status" id="result">Analysing...</p>
+    </div>
+    <script src="live-fire.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/templates/tryDemo.css" />
+    <title>Video Uploading for Detection</title>
+  </head>
+  <body>
+    <div class="stream-title">
+      <h1>Shoplifting Detection</h1>
+    </div>
+    <div class="content">
+      <div class="model-btns">
+        <input type="file" id="videoUpload" accept="video/*" />
+        <label for="videoUpload">Choose a file</label>
+        <button onclick="uploadVideo()" class="run-btn">
+          Upload & Run Model
+        </button>
+      </div>
+      <div class="processedVideo">
+        <h2>Processed Video ⬇</h2>
+        <video
+          width="640"
+          height="300"
+          id="processedVideo"
+          controls
+          type="video/mp4"
+          src=""
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </body>
+  <script src="try-demo.js"></script>
+</html>

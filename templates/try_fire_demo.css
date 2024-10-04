@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mian-color: #00457a;
+}
+
+body {
+  font-family: "Khand", sans-serif;
+  font-style: normal;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  background-image: url("/templates/pictures/fire-bg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.stream-title {
+  width: 100%;
+  height: 54px;
+  background-color: #fbb540;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.content {
+  width: 100%;
+  margin-top: 20px;
+}
+.processedVideo {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  video,
+  h2 {
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: #fbb540 1px 1px 5px;
+    font-size: 40px;
+    outline: none;
+  }
+}
+.model-btns {
+  width: 40%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #f1efb1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 5px;
+
+  button {
+    background-color: #ffb22d;
+    border: none;
+    color: white;
+    padding: 10px 160px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  button:hover {
+    background-color: #ffcc74;
+  }
+  input {
+    display: none;
+    overflow: hidden;
+  }
+
+  input[type="file"] + label {
+    font-weight: 600;
+    color: #ffb22d;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    caret-color: transparent;
+  }
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
